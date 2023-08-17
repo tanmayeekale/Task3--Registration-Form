@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="Task3.css" />
+</head>
+
+<body>
+  <h1 class="center heading">Student Enrollment Form</h1>
+  <div class="container flex">
+    <div class="form">
+      <h2>Enter Details</h2>
+
+      <form id="Registration_Form">
+        <div class="detail space">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter Name:" />
+        </div>
+
+
+
+        <div class="detail space">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter Email:" />
+        </div>
+
+
+        <div class="detail space">
+          <label for="website">Website:</label>
+          <input type="url" id="website" placeholder="Enter URL:" />
+        </div>
+
+
+
+        <div class="detail space">
+          <label for="profile_pic">Profile picture:</label>
+          <input type="url" id="profile" placeholder="Enter Image-Link:" />
+          <!-- https://wallpapercave.com/wp/wp11413617.png -->
+        </div>
+
+
+
+        <div class="gender detail flex2">
+          <label>Gender:</label>
+          <div class="flex3">
+            <input type="radio" name="male-female" id="male-female" value="Male" />
+            Male
+            <input type="radio" name="male-female" id="male-female" value="Female" />
+            Female
+          </div>
+        </div>
+        <div class="language detail flex2">
+          <label for="">Language:</label>
+          <div class="flex3">
+            <input type="checkbox" value="C++" id="C++" class="checkbox" />C++
+            <input type="checkbox" value="Java" id="Java" class="checkbox" />Java
+            <input type="checkbox" value="Python" id="Python" class="checkbox" />Python
+          </div>
+        </div>
+
+        <div class="button detail">
+          <button class="hov" type="button" id="submit">Submit</button>
+          <button class="hov" type="reset" id="reset">Clear</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="output">
+      <h2>Student Enrolled</h2>
+      <div class="cardContainer" id="cardContainer"></div>
+    </div>
+  </div>
+  <script src="Task3.js"></script>
+</body>
+
+</html>
